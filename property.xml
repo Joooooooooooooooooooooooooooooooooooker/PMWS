@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<properties>
+	<!--job标签内的内容如果更改,需要重新启动服务才会有效 其他标签内的内容更改后立刻生效 不需要重启服务-->
+	<job>
+    <!--每天几点检查 建议在备份计划时间后的一个小时-->
+		<clock>08</clock>
+    <!--间隔时间 单位 秒-->
+		<interval>3600</interval>
+	</job>
+  
+	<sender>
+    <!--发件人邮箱地址-->
+		<mailuser>wangzhong@markor.com.cn</mailuser>
+    <!--发件人邮箱密码-->
+		<mailpassword>900701+wangzhong</mailpassword>
+    <!--发件人邮箱后缀-->
+		<mailpostfix>markor.com.cn</mailpostfix>
+    <!--发件人邮箱SMTP-->
+		<mailhost>smtp.qiye.163.com</mailhost>
+    <!--备份成功的邮件主题-->
+		<successsubject>BackupSuccess!</successsubject>
+    <!--备份成功的邮件内容-->
+		<successcontext>Hello!Server Backup Success!</successcontext>
+    <!--备份失败的邮件主题-->
+		<failsubject>BackupFaild!</failsubject>
+    <!--备份失败的邮件内容-->
+		<failcontext>Hello!Server Backup Faild!Check It Now Please!</failcontext>
+	</sender>
+  
+  <!--收件人邮箱地址 可配置多个revicever标签-->
+  <reciever>    
+		<mailaddress>499924562@qq.com</mailaddress>
+	</reciever>
+
+	<backup>
+    <!--要检查备份文件所在的目录-->
+		<filepath>D:\Backup</filepath>
+    <!--要检查备份文件命名规范 %s不可替换 文件名格式应为 XXX20160101.bak 的固定格式 数字为备份当天的日期-->
+		<filename>backup%s.bak</filename>
+	</backup>
+  
+	<database>
+    <!--数据库IP地址-->
+		<ip>10.5.30.53</ip>
+    <!--数据库用户名-->
+		<user>sa</user>
+    <!--数据库密码-->
+		<password>Mf123456*</password>
+    <!--数据库名称-->
+		<db>MonitorServer</db>
+    <!--数据库端口号 MySql和Oracle需要 SqlServer不需要-->
+		<port></port>
+	</database>
+  
+</properties> 
