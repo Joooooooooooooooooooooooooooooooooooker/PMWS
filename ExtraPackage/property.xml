@@ -10,13 +10,13 @@
   
 	<sender>
     <!--发件人邮箱地址-->
-		<mailuser>wangzhong@markor.com.cn</mailuser>
+		<mailuser>git@github.com</mailuser>
     <!--发件人邮箱密码-->
-		<mailpassword>900701+wangzhong</mailpassword>
+		<mailpassword>password</mailpassword>
     <!--发件人邮箱后缀-->
-		<mailpostfix>markor.com.cn</mailpostfix>
+		<mailpostfix>github.com</mailpostfix>
     <!--发件人邮箱SMTP-->
-		<mailhost>smtp.qiye.163.com</mailhost>
+		<mailhost>smtp.github.com</mailhost>
     <!--备份成功的邮件主题-->
 		<successsubject>BackupSuccess!</successsubject>
     <!--备份成功的邮件内容-->
@@ -29,7 +29,7 @@
   
   <!--收件人邮箱地址 可配置多个revicever标签-->
   <reciever>    
-		<mailaddress>499924562@qq.com</mailaddress>
+		<mailaddress>git@github.com</mailaddress>
 	</reciever>
 
 	<backup>
@@ -41,13 +41,13 @@
   
 	<database>
     <!--数据库IP地址-->
-		<ip>10.5.30.53</ip>
+		<ip>127.0.0.1</ip>
     <!--数据库用户名-->
-		<user>sa</user>
+		<user>user</user>
     <!--数据库密码-->
-		<password>Mf123456*</password>
+		<password>password</password>
     <!--数据库名称-->
-		<db>MonitorServer</db>
+		<db>db</db>
     <!--数据库端口号 MySql和Oracle需要 SqlServer不需要-->
 		<port></port>
 	</database>
