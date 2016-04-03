@@ -13,21 +13,21 @@ build_exe_options = {"packages": ["os"],
                                        "D:\\Python34\\Lib\\site-packages\\win32\\lib\\win32timezone.py",
                                        "D:\\Python34\\Lib\\site-packages\\_curses_panel.pyd",
                                        "D:\\Python34\\Lib\\site-packages\\_curses.pyd",
-                                       "C:\\Users\\wangzhong\\Desktop\\property.xml",
-                                       "C:\\Users\\wangzhong\\Desktop\\readme.txt"]
+                                       "C:\\Users\\XXX\\Desktop\\property.xml",
+                                       "C:\\Users\\XXX\\Desktop\\readme.txt"]
                      }
 
 # GUI applications require a different base on Windows (the default is for a
 # console application).
 base = None
-if sys.platform == "win32":
+if sys.platform == "win32" or sys.platform == "win64":
     base = "Win32GUI"
     
 executables = [Executable(script='MonitorService.py',
                base=base,
                targetName="joker.exe",
                compress=True,
-               icon="E:\\PythonProject\\DataRegulation\\icon\\ico-48.ico")]
+               icon="D:\\ico-48.ico")]
 
 setup  (name = "PyService4Windows",
         version = "1.0",
